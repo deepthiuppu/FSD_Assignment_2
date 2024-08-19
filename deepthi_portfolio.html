@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-image: url('https://c8.alamy.com/comp/2GA80RK/blank-white-paper-in-coil-notebook-with-sharpened-pencil-and-glass-jar-of-pencils-on-old-wood-desk-2GA80RK.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+            color: white;
+        }
+        
+        header .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 4em;
+            margin: 0;
+        }
+        
+        header p {
+            font-size: 1.5em;
+            margin: 10px 0 20px;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 30px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            background-color: #444;
+            border-radius: 5px;
+        }
+        
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            background-image: url('https://cgaskell9367.wordpress.com/wp-content/uploads/2015/04/watercolor3.jpg');
+            background-size: cover;
+        }
+        
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        h3 {
+            font-size: 2em;
+            margin: 15px 0;
+            color: #555;
+        }
+        
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+        
+        .education {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .education .degree {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .skills {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .skills .skill {
+            text-align: left;
+        }
+        
+        .skills .progress {
+            background: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 5px;
+        }
+        
+        .skills .progress-bar {
+            background: #333;
+            height: 10px;
+            width: 0;
+        }
+        
+        .skills .progress-bar {
+            transition: width 1s ease;
+        }
+        
+        .skills .progress-bar:hover {
+            background: #555;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEEPTHI- Portfolio</title>
+    <link rel="stylesheet" href="deepthi_portfolio.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="home">
+        <div class="overlay">
+            <h1>DEEPTHI PORTFOLIO</h1>
+            <p>Aspiring Engineer</p>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate engineer, driven by a relentless curiosity to innovate and solve complex problems. 
+            The intricate theory and practicality in engineering fascinate me. I thrive on challenges, viewing them as opportunities 
+            to expand my knowledge and skills. With a keen eye for detail and a collaborative spirit, I am committed to turning 
+            ideas into tangible realities. My journey in engineering is fueled by a desire to create a lasting impact and contribute to a better future.
+        </p>
+        <h3>Education</h3>
+        <div class="education">
+            <div class="degree">
+                <h4>Bachelor of Technology in Computer Science and Engineering</h4>
+                <p>Vignan's Foundation For Science, Technology And Research, Vadlamudi, Guntur</p>
+                <p>CGPA: 8.91</p>
+            </div>
+            <div class="degree">
+                <h4>Intermediate</h4>
+                <p>Tirumala Junior College, Katheru, Rajamundry</p>
+                <p>Percentage: 98.2</p>
+            </div>
+            <div class="degree">
+                <h4>10th Standard</h4>
+                <p>Dr. KKR Gowtham School, Jayendra Nagar, Kakinada</p>
+                <p>CGPA: 10</p>
+            </div>
+        </div>
+
+        <h3>Skills</h3>
+        <div class="skills">
+            <div class="skill">
+                <p>HTML & CSS</p>
+                <div class="progress"><div class="progress-bar" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="progress"><div class="progress-bar" style="width: 70%;"></div></div>
+            </div>
+            <div class="skill">
+                <p>Python</p>
+                <div class="progress"><div class="progress-bar" style="width: 70%;"></div></div>
+            </div>
+        </div>
+
+        <h4>Certifications</h4>
+        <ul>
+            <li><strong>NPTEL:</strong> Leadership and Team Effectiveness, Principles of Management, Introduction to Internet of Things</li>
+            <li><strong>CISCO:</strong> Introduction to Packet Tracer, Network Essentials</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <article>
+            <h3>Kidney Disease Detection Using Pre-Trained CNN Models</h3>
+            <p>
+                Developed an automated kidney stone detection system using deep learning models like VGG16. Achieved 99% accuracy 
+                through data augmentation and model evaluation against existing architectures. This project emphasizes the importance 
+                of accurate kidney stone detection for timely treatment and patient care.
+            </p>
+        </article>
+
+        <article>
+            <h3>A Study of Various Clustering Techniques on Medical Expenditure</h3>
+            <p>
+                Conducted a comprehensive study on various clustering techniques for analyzing medical expenditure data. 
+                Evaluated methods like DBSCAN, Hierarchical clustering, Gaussian Mixture Model, Fuzzy C-means, K-means, and 
+                Minibatch K-means to contribute to the advancement of cost-effective healthcare management strategies.
+            </p>
+        </article>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:ss.deepthiuppu2502@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Send">
+        </form>
+        <p>You can also reach me via email at <a href="mailto:ss.deepthiuppu2502@gmail.com">ss.deepthiuppu2502@gmail.com</a>.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 deepthupppu2502. All rights reserved.</p>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/saranya-pabbineedi-0732a4293/" target="_blank">LinkedIn</a>.</p>
+    </footer>
+
+</body>
+</html>
